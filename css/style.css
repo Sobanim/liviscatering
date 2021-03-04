@@ -1,29 +1,44 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Regular.eot");
+  src: local("☺"), url("../fonts/DMSans-Regular.woff") format("woff"), url("../fonts/DMSans-Regular.ttf") format("truetype"), url("../fonts/DMSans-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Medium.eot");
+  src: local("☺"), url("../fonts/DMSans-Medium.woff") format("woff"), url("../fonts/DMSans-Medium.ttf") format("truetype"), url("../fonts/DMSans-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
 .padding25 {
-  padding: 0 25rem;
+  padding: 0 250px;
 }
 
-html {
-  font-size: 0.521vw;
+.mgLeft10 {
+  margin-left: 100px;
 }
 
 .intro {
-  background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("/images/galeria-4.jpg");
+  background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
-  height: 90rem;
+  height: 900px;
   border-radius: 0 0 50% 50%/0 0 50px 50px;
 }
 .intro .header {
-  padding-top: 7rem;
+  padding-top: 70px;
   box-sizing: content-box;
 }
 .intro .header__content {
-  height: 15rem;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,28 +46,53 @@ html {
   opacity: 0.5;
 }
 .intro .header .nav {
+  width: 40%;
   display: flex;
-  width: 45rem;
   justify-content: space-between;
 }
 .intro .header .nav__link {
   text-decoration: none;
   color: #476667;
-  font-size: 1.8rem;
+  font: 400 16px "DMSans";
 }
 .intro .header .nav__link:hover {
   color: #c28283;
   transition: color 0.3s ease;
 }
 .intro .header .logo img {
-  height: 7rem;
+  height: 70px;
   display: block;
 }
 .intro__content {
   display: flex;
 }
 .intro__title {
-  font-size: 7rem;
+  color: #476667;
+  font: 400 72px "DMSans";
+}
+.intro__description {
+  color: #c28283;
+  font: 400 18px "DMSans";
+}
+.intro__photos img {
+  position: relative;
+}
+.intro__photos img:first-child {
+  top: 45px;
+}
+.intro__photos img:nth-child(2) {
+  right: 50px;
+}
+.intro__photos img:last-child {
+  left: 50px;
+}
+
+.footer {
+  height: 50px;
+  font: 400 14px "DMSans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #476667;
 }
 
