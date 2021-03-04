@@ -1,3 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.padding25 {
+  padding: 0 25rem;
+}
+
+html {
+  font-size: 0.521vw;
+}
+
+.intro {
+  background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("/images/galeria-4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90rem;
+  border-radius: 0 0 50% 50%/0 0 50px 50px;
+}
+.intro .header {
+  padding-top: 7rem;
+  box-sizing: content-box;
+}
+.intro .header__content {
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  opacity: 0.5;
+}
+.intro .header .nav {
+  display: flex;
+  width: 45rem;
+  justify-content: space-between;
+}
+.intro .header .nav__link {
+  text-decoration: none;
+  color: #476667;
+  font-size: 1.8rem;
+}
+.intro .header .nav__link:hover {
+  color: #c28283;
+  transition: color 0.3s ease;
+}
+.intro .header .logo img {
+  height: 7rem;
+  display: block;
+}
+.intro__content {
+  display: flex;
+}
+.intro__title {
+  font-size: 7rem;
+  color: #476667;
+}
 
 /*# sourceMappingURL=style.css.map */

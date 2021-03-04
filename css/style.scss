@@ -1,8 +1,76 @@
-$headcolor: #476667;
-$textcolor: #c28283;
-$backgroundcolor: #f9e8eb;
+$black: #476667;
+$darkPink: #c28283;
+$pink: #f9e8eb;
 
-html{
-  //font-size: .52vw;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+.padding25{
+  padding:0 25rem ;
+}
+
+html {
+  font-size: .521vw;
+}
+
+.intro {
+  background: linear-gradient(90deg, rgba(249,232,235,1) 0%, rgba(249,232,235,0.85) 65%, rgba(71,102,103,0.65) 100%), url("/images/galeria-4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90rem;
+  border-radius: 0 0 50% 50% / 0 0 50px 50px;
+
+  .header {
+    padding-top: 7rem;
+    box-sizing: content-box;
+    &__content{
+      height: 15rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      opacity: .5;
+    }
+    .nav{
+      display: flex;
+      width: 45rem;
+      justify-content: space-between;
+      &__link{
+        text-decoration: none;
+        color: $black;
+        font-size: 1.8rem;
+      }
+      &__link:hover{
+        color: $darkPink;
+        transition: color .3s ease;
+      }
+    }
+
+    .logo {
+      //display: block;
+      //cursor: pointer;
+      img {
+        height: 7rem;
+        display: block;
+      }
+    }
+
+  }
+
+  &__content{
+    display: flex;
+  }
+  &__photos{
+    //display: flex;
+  }
+
+  &__title{
+    font-size: 7rem;
+    color: $black;
+  }
+  &__description{
+
+  }
+}
