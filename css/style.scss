@@ -25,8 +25,12 @@ $pink: #f9e8eb;
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 .padding25{
-  padding:0 250px ;
+  padding:0 250px;
 }
 
 .mgLeft10{
@@ -57,13 +61,14 @@ $pink: #f9e8eb;
       justify-content: space-between;
 
       &__link{
-        text-decoration: none;
         color: $black;
         font: 400 16px 'DMSans';
+        transition: all .5s ease;
+        padding: 10px 0;
       }
       &__link:hover{
         color: $darkPink;
-        transition: color .3s ease;
+        transition: all .5s ease;
       }
     }
 
@@ -97,30 +102,33 @@ $pink: #f9e8eb;
     line-height: 1.7;
   }
 
-  &__photos{
-    position: relative;
-    //margin-top: 82px;
-  }
-
   &__photos img{
+    width: 29vw;
+  }
 
+  &__links{
+    margin-top: 70px;
   }
-  &__photos img:first-child{
-    position: absolute;
-    z-index: 1;
+
+  &__link{
+    color: white;
+    background: $darkPink;
+    padding: 20px 40px;
+    font: 400 18px 'DMSans';
+    border-radius: 36px;
+    transition: all .5s ease;
+    &.about-us{
+      background: $black;
+      margin-right: 30px;
+    }
+    &:hover{
+      box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
+      -webkit-box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
+      -moz-box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
+      transition: all .5s ease;
+    }
   }
-  &__photos img:nth-child(2){
-    position: absolute;
-    top: 80px;
-    left: 17vw;
-    z-index: 3;
-  }
-  &__photos img:last-child{
-    position: relative;
-    left: 8.6vw;
-    top: 397px;
-    z-index: 2;
-  }
+
 }
 
 .footer{

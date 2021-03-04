@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .padding25 {
   padding: 0 250px;
 }
@@ -52,13 +56,14 @@
   justify-content: space-between;
 }
 .intro .header .nav__link {
-  text-decoration: none;
   color: #476667;
   font: 400 16px "DMSans";
+  transition: all 0.5s ease;
+  padding: 10px 0;
 }
 .intro .header .nav__link:hover {
   color: #c28283;
-  transition: color 0.3s ease;
+  transition: all 0.5s ease;
 }
 .intro .header .logo img {
   height: 70px;
@@ -82,24 +87,29 @@
   margin-top: 18px;
   line-height: 1.7;
 }
-.intro__photos {
-  position: relative;
+.intro__photos img {
+  width: 29vw;
 }
-.intro__photos img:first-child {
-  position: absolute;
-  z-index: 1;
+.intro__links {
+  margin-top: 70px;
 }
-.intro__photos img:nth-child(2) {
-  position: absolute;
-  top: 80px;
-  left: 17vw;
-  z-index: 3;
+.intro__link {
+  color: white;
+  background: #c28283;
+  padding: 20px 40px;
+  font: 400 18px "DMSans";
+  border-radius: 36px;
+  transition: all 0.5s ease;
 }
-.intro__photos img:last-child {
-  position: relative;
-  left: 8.6vw;
-  top: 397px;
-  z-index: 2;
+.intro__link.about-us {
+  background: #476667;
+  margin-right: 30px;
+}
+.intro__link:hover {
+  box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
+  -webkit-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
+  -moz-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
+  transition: all 0.5s ease;
 }
 
 .footer {
