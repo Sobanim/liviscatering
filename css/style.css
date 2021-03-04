@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .padding25 {
@@ -65,26 +66,40 @@
 }
 .intro__content {
   display: flex;
+  margin-top: 90px;
+}
+.intro__text {
+  width: 54%;
 }
 .intro__title {
   color: #476667;
   font: 400 72px "DMSans";
+  line-height: 1.2;
 }
 .intro__description {
   color: #c28283;
   font: 400 18px "DMSans";
+  margin-top: 18px;
+  line-height: 1.7;
 }
-.intro__photos img {
+.intro__photos {
   position: relative;
 }
 .intro__photos img:first-child {
-  top: 45px;
+  position: absolute;
+  z-index: 1;
 }
 .intro__photos img:nth-child(2) {
-  right: 50px;
+  position: absolute;
+  top: 80px;
+  left: 17vw;
+  z-index: 3;
 }
 .intro__photos img:last-child {
-  left: 50px;
+  position: relative;
+  left: 8.6vw;
+  top: 397px;
+  z-index: 2;
 }
 
 .footer {

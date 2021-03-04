@@ -22,6 +22,7 @@ $pink: #f9e8eb;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .padding25{
@@ -77,33 +78,48 @@ $pink: #f9e8eb;
 
   &__content{
     display: flex;
+    margin-top: 90px;
+  }
+
+  &__text{
+    width: 54%;
   }
 
   &__title{
     color: $black;
     font: 400 72px 'DMSans';
+    line-height: 1.2;
   }
   &__description{
     color: $darkPink;
     font: 400 18px 'DMSans';
+    margin-top: 18px;
+    line-height: 1.7;
   }
 
   &__photos{
-    //position: relative;
+    position: relative;
+    //margin-top: 82px;
   }
 
   &__photos img{
-    position: relative;
+
   }
   &__photos img:first-child{
-    top: 45px;
+    position: absolute;
+    z-index: 1;
   }
   &__photos img:nth-child(2){
-    //position: absolute;
-    right: 50px;
+    position: absolute;
+    top: 80px;
+    left: 17vw;
+    z-index: 3;
   }
   &__photos img:last-child{
-    left: 50px;
+    position: relative;
+    left: 8.6vw;
+    top: 397px;
+    z-index: 2;
   }
 }
 
