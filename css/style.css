@@ -47,7 +47,6 @@ h2.pink {
   background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
-  height: 900px;
   border-radius: 0 0 50% 50%/0 0 50px 50px;
 }
 .intro .header {
@@ -156,6 +155,45 @@ h2.pink {
   align-items: center;
   font: 400 18px "DMSans";
   color: #c28283;
+}
+
+.gallery {
+  margin-top: 115px;
+}
+.gallery__category {
+  font: 400 16px "DMSans";
+  color: #476667;
+  letter-spacing: 2px;
+}
+.gallery__header {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__header svg {
+  width: 100px;
+}
+.gallery__header h2 {
+  font-size: 60px;
+  line-height: 1.9;
+}
+.gallery__content {
+  display: flex;
+  overflow: auto;
+  padding-left: 250px;
+  margin-top: 30px;
+}
+.gallery__content img {
+  height: 20vw;
+  margin-right: 10px;
+}
+.gallery__content img:last-child {
+  margin-right: 0px;
+}
+
+.reference {
+  background: #476667;
+  color: white;
+  height: 800px;
 }
 
 .footer {
