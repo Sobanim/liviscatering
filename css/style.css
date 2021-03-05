@@ -31,6 +31,18 @@ a {
   margin-left: 100px;
 }
 
+h2.black {
+  color: #476667;
+  font: 400 72px "DMSans";
+  line-height: 1.2;
+}
+
+h2.pink {
+  font: 400 72px "DMSans";
+  color: #c28283;
+  letter-spacing: -5px;
+}
+
 .intro {
   background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
@@ -76,11 +88,6 @@ a {
 .intro__text {
   width: 54%;
 }
-.intro__title {
-  color: #476667;
-  font: 400 72px "DMSans";
-  line-height: 1.2;
-}
 .intro__description {
   color: #c28283;
   font: 400 18px "DMSans";
@@ -110,6 +117,45 @@ a {
   -webkit-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
   -moz-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
   transition: all 0.5s ease;
+}
+
+.we-are {
+  display: flex;
+  margin-top: 95px;
+}
+.we-are__photos {
+  position: relative;
+}
+.we-are__photos svg {
+  position: absolute;
+  bottom: 30px;
+  left: 340px;
+  width: 265px;
+}
+.we-are__content {
+  margin: 108px 23% 0 15%;
+}
+.we-are__category {
+  font: 400 16px "DMSans";
+  color: #c28283;
+  letter-spacing: 3px;
+}
+.we-are__description p {
+  font: 400 16px "DMSans";
+  color: #476667;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+.we-are__services {
+  margin-top: 120px;
+}
+.we-are__services ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 400 18px "DMSans";
+  color: #c28283;
 }
 
 .footer {

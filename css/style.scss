@@ -25,20 +25,32 @@ $pink: #f9e8eb;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.padding25{
-  padding:0 250px;
+.padding25 {
+  padding: 0 250px;
 }
 
-.mgLeft10{
+.mgLeft10 {
   margin-left: 100px;
 }
 
+h2.black{
+  color: $black;
+  font: 400 72px "DMSans";
+  line-height: 1.2;
+}
+
+h2.pink{
+  font: 400 72px "DMSans";
+  color: $darkPink;
+  letter-spacing: -5px;
+}
+
 .intro {
-  background: linear-gradient(90deg, rgba(249,232,235,1) 0%, rgba(249,232,235,0.85) 65%, rgba(71,102,103,0.65) 100%), url("../images/galeria-4.jpg");
+  background: linear-gradient(90deg, rgba(249, 232, 235, 1) 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
   height: 900px;
@@ -47,7 +59,8 @@ a{
   .header {
     padding-top: 70px;
     box-sizing: content-box;
-    &__content{
+
+    &__content {
       height: 150px;
       display: flex;
       justify-content: space-between;
@@ -55,18 +68,20 @@ a{
       background: white;
       opacity: .5;
     }
-    .nav{
+
+    .nav {
       width: 40%;
       display: flex;
       justify-content: space-between;
 
-      &__link{
+      &__link {
         color: $black;
         font: 400 16px 'DMSans';
         transition: all .5s ease;
         padding: 10px 0;
       }
-      &__link:hover{
+
+      &__link:hover {
         color: $darkPink;
         transition: all .5s ease;
       }
@@ -81,57 +96,105 @@ a{
   }
 
 
-  &__content{
+  &__content {
     display: flex;
     margin-top: 90px;
   }
 
-  &__text{
+  &__text {
     width: 54%;
   }
 
-  &__title{
-    color: $black;
-    font: 400 72px 'DMSans';
-    line-height: 1.2;
-  }
-  &__description{
+  &__description {
     color: $darkPink;
     font: 400 18px 'DMSans';
     margin-top: 18px;
     line-height: 1.7;
   }
 
-  &__photos img{
+  &__photos img {
     width: 29vw;
   }
 
-  &__links{
+  &__links {
     margin-top: 70px;
   }
 
-  &__link{
+  &__link {
     color: white;
     background: $darkPink;
     padding: 20px 40px;
     font: 400 18px 'DMSans';
     border-radius: 36px;
     transition: all .5s ease;
-    &.about-us{
+
+    &.about-us {
       background: $black;
       margin-right: 30px;
     }
-    &:hover{
-      box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
-      -webkit-box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
-      -moz-box-shadow: 1px -1px 29px -1px rgba(255,255,255,0.51) inset;
+
+    &:hover {
+      box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
+      -webkit-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
+      -moz-box-shadow: 1px -1px 29px -1px rgba(255, 255, 255, 0.51) inset;
       transition: all .5s ease;
     }
   }
 
 }
 
-.footer{
+.we-are {
+  display: flex;
+  margin-top: 95px;
+
+  &__photos{
+    position: relative;
+
+    svg{
+      position: absolute;
+      bottom: 30px;
+      left: 340px;
+      width: 265px;
+    }
+  }
+
+
+  &__content {
+    margin: 108px 23% 0 15%;
+    //margin: 0 15vw 0 15vw;
+  }
+
+  &__category {
+    font: 400 16px 'DMSans';
+    color: $darkPink;
+    letter-spacing: 3px;
+  }
+
+
+  &__description{
+    p{
+      font: 400 16px 'DMSans';
+      color: $black;
+      line-height: 1.8;
+      margin-top: 18px;
+    }
+  }
+  &__services{
+    margin-top: 120px;
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font: 400 18px 'DMSans';
+      color: $darkPink;
+    }
+  }
+
+}
+
+
+.footer {
   height: 50px;
   font: 400 14px 'DMSans';
   display: flex;
