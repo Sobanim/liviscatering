@@ -242,6 +242,15 @@ h2.pink {
   margin-right: 0;
 }
 
+.contact {
+  background: #f9e8eb;
+}
+.contact form input, .contact form textarea {
+  border: 0;
+  background: #f9e8eb;
+  border-bottom: 1.5px solid #476667;
+  font: 400 16px "DMSans";
+}
 .footer {
   height: 50px;
   font: 400 14px "DMSans";

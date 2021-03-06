@@ -289,6 +289,23 @@ h2.pink{
   }
 }
 
+.contact{
+  background: $pink;
+
+
+
+  form{
+    input, textarea{
+      border: 0;
+      background: $pink;
+      border-bottom: 1.5px solid #476667;
+      font: 400 16px 'DMSans';
+    }
+    & ::placeholder{
+
+    }
+  }
+}
 
 
 
