@@ -53,7 +53,7 @@ h2.pink{
   background: linear-gradient(90deg, rgba(249, 232, 235, 1) 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
-  //height: 900px;
+  height: 900px;
   border-radius: 0 0 50% 50% / 0 0 50px 50px;
 
   .header {
@@ -117,7 +117,7 @@ h2.pink{
   }
 
   &__links {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   &__link {
@@ -125,6 +125,7 @@ h2.pink{
     background: $darkPink;
     padding: 20px 40px;
     font: 400 18px 'DMSans';
+    display: inline-block;
     border-radius: 36px;
     transition: all .5s ease;
 
@@ -221,6 +222,10 @@ h2.pink{
     overflow: auto;
     padding-left: 250px;
     margin-top: 30px;
+    margin-bottom: -80px;
+    //&::-webkit-scrollbar{
+    //  width: 0;
+    //}
 
     img{
       height: 20vw;
@@ -237,6 +242,51 @@ h2.pink{
   background: $black;
   color: white;
   height: 800px;
+  &__row{
+    display: flex;
+    padding-top: 295px;
+  }
+
+  &__head{
+    flex: 30%;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    text-align: center;
+   & a {
+     padding: 20px 45px;
+     text-decoration: none;
+     background: white;
+     color: $black;
+     font: 400 18px 'DMSans';
+     letter-spacing: 1px;
+     border-radius: 36px;
+    }
+  }
+  &__category{
+    font: 400 16px "DMSans";
+    color: white;
+    letter-spacing: 2px;
+  }
+  &__title{
+    flex: 1;
+  }
+  &__title h2{
+    color: white;
+    letter-spacing: -6px;
+  }
+
+  &__text{
+    flex: 20.33%;
+    margin-right: 50px;
+    font: 400 16px 'DMSans';
+    line-height: 1.8;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 

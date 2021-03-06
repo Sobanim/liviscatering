@@ -47,6 +47,7 @@ h2.pink {
   background: linear-gradient(90deg, #f9e8eb 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
+  height: 900px;
   border-radius: 0 0 50% 50%/0 0 50px 50px;
 }
 .intro .header {
@@ -97,13 +98,14 @@ h2.pink {
   width: 29vw;
 }
 .intro__links {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .intro__link {
   color: white;
   background: #c28283;
   padding: 20px 40px;
   font: 400 18px "DMSans";
+  display: inline-block;
   border-radius: 36px;
   transition: all 0.5s ease;
 }
@@ -181,6 +183,7 @@ h2.pink {
   overflow: auto;
   padding-left: 250px;
   margin-top: 30px;
+  margin-bottom: -80px;
 }
 .gallery__content img {
   height: 20vw;
@@ -194,6 +197,49 @@ h2.pink {
   background: #476667;
   color: white;
   height: 800px;
+}
+.reference__row {
+  display: flex;
+  padding-top: 295px;
+}
+.reference__head {
+  flex: 30%;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.reference__link {
+  text-align: center;
+}
+.reference__link a {
+  padding: 20px 45px;
+  text-decoration: none;
+  background: white;
+  color: #476667;
+  font: 400 18px "DMSans";
+  letter-spacing: 1px;
+  border-radius: 36px;
+}
+.reference__category {
+  font: 400 16px "DMSans";
+  color: white;
+  letter-spacing: 2px;
+}
+.reference__title {
+  flex: 1;
+}
+.reference__title h2 {
+  color: white;
+  letter-spacing: -6px;
+}
+.reference__text {
+  flex: 20.33%;
+  margin-right: 50px;
+  font: 400 16px "DMSans";
+  line-height: 1.8;
+}
+.reference__text:last-child {
+  margin-right: 0;
 }
 
 .footer {
