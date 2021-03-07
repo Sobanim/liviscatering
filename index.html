@@ -7,10 +7,11 @@
     <title>Livi`s | Kitchen & Catering</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mklb.css">
 </head>
 <body>
 
-<div class="intro">
+<div class="intro" id="uvod">
     <div class="header">
         <div class="header__content padding25">
             <a href="/" class="logo">
@@ -22,19 +23,19 @@
                 <span></span>
             </div>
             <div class="nav">
-                <a class="nav__link" href="">Úvod</a>
-                <a class="nav__link" href="">Kto sme</a>
-                <a class="nav__link" href="">Referencie</a>
-                <a class="nav__link" href="">Galéria</a>
-                <a class="nav__link" href="">Kontakt</a>
+                <a class="nav__link" href="#uvod">Úvod</a>
+                <a class="nav__link" href="#kto-sme">Kto sme</a>
+                <a class="nav__link" href="#referencie">Referencie</a>
+                <a class="nav__link" href="#galeria">Galéria</a>
+                <a class="nav__link" href="#kontakt">Kontakt</a>
             </div>
         </div>
         <div class="mob-nav">
-            <a class="mob-nav__link" href="">Úvod</a>
-            <a class="mob-nav__link" href="">Kto sme</a>
-            <a class="mob-nav__link" href="">Referencie</a>
-            <a class="mob-nav__link" href="">Galéria</a>
-            <a class="mob-nav__link" href="">Kontakt</a>
+            <a class="mob-nav__link" href="#uvod">Úvod</a>
+            <a class="mob-nav__link" href="#kto-sme">Kto sme</a>
+            <a class="mob-nav__link" href="#referencie">Referencie</a>
+            <a class="mob-nav__link" href="#galeria">Galéria</a>
+            <a class="mob-nav__link" href="#kontakt">Kontakt</a>
         </div>
     </div>
 
@@ -50,11 +51,11 @@
                 quasi quidem. Beatae consequatur, dolores eaque molestias officia saepe sapiente voluptatem! Accusantium
                 earum nostrum quasi sunt!
             </div>
-            <div class="intro__links link">
-                <a href="" class="intro__link link about-us">
+            <div class="intro__links">
+                <a href="#kontakt" class="intro__link link about-us">
                     O nás
                 </a>
-                <a href="" class="intro__link link">
+                <a href="#kontakt" class="intro__link link">
                     Kontaktujte nás
                 </a>
             </div>
@@ -65,7 +66,7 @@
         </div>
     </div>
 </div>
-<div class="we-are">
+<div class="we-are" id="kto-sme">
     <div class="we-are__photos">
 
         <img src="images/livis-5.jpg" alt="Lívia a Viktória">
@@ -190,7 +191,7 @@
     </div>
 </div>
 
-<div class="gallery">
+<div class="gallery" id="galeria">
     <div class="gallery__category padding25 category">
         <h6>GALÉRIA</h6>
     </div>
@@ -214,15 +215,15 @@
         </svg>
     </div>
     <div class="gallery__content">
-        <img src="/images/gallery/galeria-1.jpg" alt="">
-        <img src="/images/gallery/galeria-2.jpg" alt="">
-        <img src="/images/gallery/galeria-3.jpg" alt="">
-        <img src="/images/gallery/galeria-4.jpg" alt="">
-        <img src="/images/gallery/galeria-5.jpg" alt="">
+        <img class="mklbItem" src="/images/gallery/galeria-1.jpg" data-gallery="gallery1">
+        <img class="mklbItem" src="/images/gallery/galeria-2.jpg" data-gallery="gallery1">
+        <img class="mklbItem" src="/images/gallery/galeria-3.jpg" data-gallery="gallery1">
+        <img class="mklbItem" src="/images/gallery/galeria-4.jpg" data-gallery="gallery1">
+        <img class="mklbItem" src="/images/gallery/galeria-5.jpg" data-gallery="gallery1">
     </div>
 </div>
 
-<div class="reference padding25">
+<div class="reference padding25" id="referencie">
     <div class="reference__row">
         <div class="reference__head">
             <div class="reference__category category">
@@ -259,7 +260,7 @@
     </div>
 </div>
 
-<div class="contact padding25 ">
+<div class="contact padding25" id="kontakt">
     <div class="contact__form mgLeft10">
         <div class="contact__category category">
             <h6>KONTAKT</h6>
@@ -388,6 +389,8 @@
 </div>
 
 <script src="js/script.js"></script>
+<!--Library for gallery-->
+<script src="js/mklb.js"></script>
 </body>
 </html>
 

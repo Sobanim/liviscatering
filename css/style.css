@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .link {
   padding: 20px 40px;
   font: 400 18px "DMSans";
@@ -192,6 +196,11 @@ h2.pink {
 }
 .gallery__header svg {
   width: 100px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0s;
+}
+.gallery__header svg:hover {
+  width: 90px;
 }
 .gallery__header h2 {
   font-size: 60px;
@@ -203,6 +212,13 @@ h2.pink {
   padding-left: 250px;
   margin-top: 30px;
   margin-bottom: -80px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.gallery__content::-webkit-scrollbar {
+  width: 0;
+}
+.gallery__content:hover {
+  padding-left: 100px;
 }
 .gallery__content img {
   height: 20vw;
@@ -594,6 +610,9 @@ h2.pink {
     padding-top: 80px;
     flex-direction: column;
   }
+  .reference__title h2 {
+    margin-bottom: 20px;
+  }
   .reference__text {
     margin-right: 0;
     line-height: 1.6;
@@ -628,6 +647,23 @@ h2.pink {
   }
   .contact .send-btn {
     text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  h2.black, h2.pink {
+    font-size: 39px;
+  }
+
+  .gallery .gallery__header .black {
+    font-size: 29px;
+  }
+
+  .gallery .gallery__header svg {
+    width: 35px;
+  }
+
+  .reference__text {
+    line-height: 1.4;
   }
 }
 

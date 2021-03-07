@@ -3,6 +3,7 @@ $black: #476667;
 $darkPink: #c28283;
 $pink: #f9e8eb;
 
+
 // Import font-family
 @font-face {
   font-family: 'DMSans';
@@ -25,6 +26,10 @@ $pink: #f9e8eb;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .link{
@@ -234,6 +239,11 @@ h2.pink {
 
     svg {
       width: 100px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out 0s;
+      &:hover{
+        width: 90px;
+      }
     }
 
     h2 {
@@ -248,9 +258,14 @@ h2.pink {
     padding-left: 250px;
     margin-top: 30px;
     margin-bottom: -80px;
-    //&::-webkit-scrollbar{
-    //  width: 0;
-    //}
+    transition: all 0.5s ease-in-out 0s;
+
+    &::-webkit-scrollbar{
+      width: 0;
+    }
+    &:hover{
+      padding-left: 100px;
+    }
 
     img {
       height: 20vw;
@@ -705,6 +720,10 @@ h2.pink {
       flex-direction: column;
     }
 
+    &__title h2{
+      margin-bottom: 20px;
+    }
+
     &__text {
       margin-right: 0;
       line-height: 1.6;
@@ -743,9 +762,21 @@ h2.pink {
       text-align: center;
     }
 
-
-
   }
 
+}
 
+@media (max-width: 375px) {
+  h2.black, h2.pink{
+    font-size: 39px;
+  }
+  .gallery .gallery__header .black {
+    font-size: 29px;
+  }
+  .gallery .gallery__header svg {
+    width: 35px;
+  }
+  .reference__text {
+    line-height: 1.4;
+  }
 }
