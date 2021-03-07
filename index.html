@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Výnimočné,exotické jedlo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Livi`s | Kitchen & Catering</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -16,10 +17,10 @@
                 <img class="logo" src="images/logo.svg" alt="Livis logo">
             </a>
 
-            <!-- Burger -->
-<!--            <div class="burger">-->
-<!--                <span></span>-->
-<!--            </div>-->
+            <!--Burger-->
+            <div class="burger">
+                <span></span>
+            </div>
             <div class="nav">
                 <a class="nav__link" href="">Úvod</a>
                 <a class="nav__link" href="">Kto sme</a>
@@ -27,6 +28,13 @@
                 <a class="nav__link" href="">Galéria</a>
                 <a class="nav__link" href="">Kontakt</a>
             </div>
+        </div>
+        <div class="mob-nav">
+            <a class="mob-nav__link" href="">Úvod</a>
+            <a class="mob-nav__link" href="">Kto sme</a>
+            <a class="mob-nav__link" href="">Referencie</a>
+            <a class="mob-nav__link" href="">Galéria</a>
+            <a class="mob-nav__link" href="">Kontakt</a>
         </div>
     </div>
 
@@ -42,11 +50,11 @@
                 quasi quidem. Beatae consequatur, dolores eaque molestias officia saepe sapiente voluptatem! Accusantium
                 earum nostrum quasi sunt!
             </div>
-            <div class="intro__links">
-                <a href="" class="intro__link about-us">
+            <div class="intro__links link">
+                <a href="" class="intro__link link about-us">
                     O nás
                 </a>
-                <a href="" class="intro__link">
+                <a href="" class="intro__link link">
                     Kontaktujte nás
                 </a>
             </div>
@@ -224,7 +232,7 @@
                 <h2 class="pink">Povedali o nás</h2>
             </div>
             <div class="reference__link mgLeft10">
-                <a href="">Viac recenzií</a>
+                <a href="" class="link">Viac recenzií</a>
             </div>
         </div>
         <div class="reference__text">
@@ -270,8 +278,9 @@
             <input type="email" placeholder="Emailová adresa *">
             <textarea placeholder="Sprava *"></textarea>
 
-            <!--        TODO - submit button -->
-
+            <div class="send-btn">
+                <button type="submit" class="link">Odoslať</button>
+            </div>
         </form>
     </div>
     <div class="contact__images">
@@ -377,7 +386,8 @@
 <div class="footer">
     &copy; liviscatering.sk 2021
 </div>
-</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
