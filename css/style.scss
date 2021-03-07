@@ -476,3 +476,9 @@ h2.pink {
     margin: 108px 4% 0 6%;
   }
 }
+
+@media (max-width: 767px) {
+  .intro {
+    display: none;
+  }
+}
