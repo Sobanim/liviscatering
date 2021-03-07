@@ -1,7 +1,9 @@
+// Color variables
 $black: #476667;
 $darkPink: #c28283;
 $pink: #f9e8eb;
 
+// Import font-family
 @font-face {
   font-family: 'DMSans';
   src: url('../fonts/DMSans-Regular.eot');
@@ -18,7 +20,7 @@ $pink: #f9e8eb;
   font-style: normal;
 }
 
-
+// Common styles
 * {
   margin: 0;
   padding: 0;
@@ -30,30 +32,37 @@ a {
 }
 
 .padding25 {
-  padding: 0 250px;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 .mgLeft10 {
   margin-left: 100px;
 }
 
-h2.black{
+h2.black {
   color: $black;
   font: 400 72px "DMSans";
   line-height: 1.2;
 }
 
-h2.pink{
+h2.pink {
   font: 400 72px "DMSans";
   color: $darkPink;
   letter-spacing: -5px;
 }
 
+.category h6 {
+  font: 400 16px "DMSans";
+}
+
+
+//
 .intro {
   background: linear-gradient(90deg, rgba(249, 232, 235, 1) 0%, rgba(249, 232, 235, 0.85) 65%, rgba(71, 102, 103, 0.65) 100%), url("../images/galeria-4.jpg");
   background-size: cover;
   background-position: center;
-  height: 900px;
+  //height: 900px;
   border-radius: 0 0 50% 50% / 0 0 50px 50px;
 
   .header {
@@ -89,8 +98,8 @@ h2.pink{
 
     .logo {
       img {
-        height: 70px;
         display: block;
+        height: 4vw;
       }
     }
   }
@@ -98,6 +107,7 @@ h2.pink{
 
   &__content {
     display: flex;
+    justify-content: space-between;
     margin-top: 90px;
   }
 
@@ -110,10 +120,12 @@ h2.pink{
     font: 400 18px 'DMSans';
     margin-top: 18px;
     line-height: 1.7;
+    padding-right: 25px;
   }
 
   &__photos img {
     width: 29vw;
+    margin-bottom: -50px;
   }
 
   &__links {
@@ -148,14 +160,14 @@ h2.pink{
   display: flex;
   margin-top: 95px;
 
-  &__photos{
+  &__photos {
     position: relative;
 
-    svg{
+    svg {
       position: absolute;
       bottom: 30px;
-      left: 340px;
-      width: 265px;
+      left: 75%;
+      width: 14vw;
     }
   }
 
@@ -166,23 +178,25 @@ h2.pink{
   }
 
   &__category {
-    font: 400 16px 'DMSans';
     color: $darkPink;
     letter-spacing: 3px;
   }
 
 
-  &__description{
-    p{
+  &__description {
+    margin-bottom: 20px;
+
+    p {
       font: 400 16px 'DMSans';
       color: $black;
       line-height: 1.8;
-      margin-top: 18px;
     }
   }
-  &__services{
-    margin-top: 120px;
-    ul{
+
+  &__services {
+    margin-top: 70px;
+
+    ul {
       list-style: none;
       display: flex;
       justify-content: space-between;
@@ -194,30 +208,30 @@ h2.pink{
 
 }
 
-.gallery{
+.gallery {
   margin-top: 115px;
 
-  &__category{
+  &__category {
     font: 400 16px 'DMSans';
     color: $black;
     letter-spacing: 2px;
   }
 
-  &__header{
+  &__header {
     display: flex;
     justify-content: space-between;
 
-    svg{
+    svg {
       width: 100px;
     }
 
-    h2{
+    h2 {
       font-size: 60px;
       line-height: 1.9;
     }
   }
 
-  &__content{
+  &__content {
     display: flex;
     overflow: auto;
     padding-left: 250px;
@@ -227,10 +241,11 @@ h2.pink{
     //  width: 0;
     //}
 
-    img{
+    img {
       height: 20vw;
       margin-right: 10px;
-      &:last-child{
+
+      &:last-child {
         margin-right: 0px;
       }
     }
@@ -238,82 +253,226 @@ h2.pink{
 }
 
 
-.reference{
+.reference {
   background: $black;
   color: white;
   height: 800px;
-  &__row{
+
+  &__row {
     display: flex;
     padding-top: 295px;
   }
 
-  &__head{
+  &__head {
     flex: 30%;
     margin-right: 90px;
     display: flex;
     flex-direction: column;
   }
+
   &__link {
-    text-align: center;
-   & a {
-     padding: 20px 45px;
-     text-decoration: none;
-     background: white;
-     color: $black;
-     font: 400 18px 'DMSans';
-     letter-spacing: 1px;
-     border-radius: 36px;
+
+    & a {
+      padding: 20px 45px;
+      text-decoration: none;
+      background: white;
+      color: $black;
+      font: 400 18px 'DMSans';
+      letter-spacing: 1px;
+      border-radius: 36px;
     }
   }
-  &__category{
-    font: 400 16px "DMSans";
+
+  &__category {
     color: white;
     letter-spacing: 2px;
   }
-  &__title{
+
+  &__title {
     flex: 1;
   }
-  &__title h2{
+
+  &__title h2 {
     color: white;
     letter-spacing: -6px;
   }
 
-  &__text{
+  &__text {
     flex: 20.33%;
     margin-right: 50px;
     font: 400 16px 'DMSans';
     line-height: 1.8;
-    &:last-child{
+
+    &:last-child {
       margin-right: 0;
     }
   }
 }
 
-.contact{
+.contact {
   background: $pink;
+  padding-top: 165px;
+  display: flex;
+  justify-content: space-between;
 
+  &__form {
+    width: 57%;
 
+    h2 {
+      margin-bottom: 70px;
+    }
+  }
 
-  form{
-    input, textarea{
+  &__images {
+    position: relative;
+
+    & .logo {
+      height: 100px;
+    }
+
+    & svg {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      height: 250px;
+    }
+  }
+
+  form {
+    input, textarea {
       border: 0;
       background: $pink;
       border-bottom: 1.5px solid #476667;
       font: 400 16px 'DMSans';
+      color: $darkPink;
+      padding: 15px 0;
+      width: 100%;
     }
-    & ::placeholder{
+
+    input[type=email] {
+      width: 100%;
+      margin: 35px 0;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      margin-bottom: 160px;
+    }
+
+    & ::placeholder {
 
     }
+
+    & .name-tel {
+      display: flex;
+      justify-content: space-between;
+
+      & .name, & .tel {
+        width: 46%;
+      }
+    }
+  }
+
+  &__category {
+    color: $darkPink;
   }
 }
 
 
-
 .footer {
   height: 50px;
-  font: 400 14px 'DMSans';
+  font: 400 16px 'DMSans';
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $black;
+}
+
+@media (max-width: 1655px) {
+  .mgLeft10 {
+    margin-left: 50px;
+  }
+  .padding25 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .we-are__content {
+    margin: 108px 16% 0 13%;
+  }
+  .reference__title h2 {
+    color: white;
+    letter-spacing: -6px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .mgLeft10 {
+    margin-left: 40px;
+  }
+  .padding25 {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .intro {
+    & .header {
+      padding-top: 40px;
+
+      &__content {
+        height: 120px;
+      }
+    }
+  }
+  .intro__links {
+    margin-bottom: 40px;
+  }
+
+  .we-are__content {
+    margin: 108px 13% 0 11%;
+  }
+  .we-are__photos svg {
+    left: 25vw;
+    width: 15vw;
+    bottom: 4vw;
+  }
+
+}
+
+@media (max-width: 1366px) {
+  .padding25 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .reference__head {
+    margin-right: 20px;
+  }
+
+  .contact__images svg {
+    left: 35%;
+    height: 14vw;
+  }
+  .intro__photos img {
+    width: 33vw;
+  }
+  .we-are__photos svg {
+    left: 25vw;
+    width: 15vw;
+    bottom: 4vw;
+  }
+  .contact__images .logo {
+    height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .padding25 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .we-are__content {
+    margin: 108px 4% 0 6%;
+  }
 }
