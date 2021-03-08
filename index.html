@@ -215,11 +215,11 @@
         </svg>
     </div>
     <div class="gallery__content">
-        <img class="mklbItem" src="/images/gallery/galeria-1.jpg" data-gallery="gallery1">
-        <img class="mklbItem" src="/images/gallery/galeria-2.jpg" data-gallery="gallery1">
-        <img class="mklbItem" src="/images/gallery/galeria-3.jpg" data-gallery="gallery1">
-        <img class="mklbItem" src="/images/gallery/galeria-4.jpg" data-gallery="gallery1">
-        <img class="mklbItem" src="/images/gallery/galeria-5.jpg" data-gallery="gallery1">
+        <img class="mklbItem" src="/images/gallery/galeria-1.jpg" data-gallery="gallery1" alt="Gallery image 1">
+        <img class="mklbItem" src="/images/gallery/galeria-2.jpg" data-gallery="gallery1" alt="Gallery image 2">
+        <img class="mklbItem" src="/images/gallery/galeria-3.jpg" data-gallery="gallery1" alt="Gallery image 3">
+        <img class="mklbItem" src="/images/gallery/galeria-4.jpg" data-gallery="gallery1" alt="Gallery image 4">
+        <img class="mklbItem" src="/images/gallery/galeria-5.jpg" data-gallery="gallery1" alt="Gallery image 5">
     </div>
 </div>
 
@@ -270,16 +270,16 @@
         <form>
             <div class="name-tel">
                 <div class="form-block name">
-                    <input type="text" min="3" maxlength="25" id="name-surname" required="required" placeholder="">
+                    <input type="text" minlength="3" maxlength="25" id="name-surname" required="required" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="">
                     <label for="name-surname">Meno a priezvisko</label>
                 </div>
                 <div class="form-block tel">
-                    <input type="tel" id="tel" minlength="8" maxlength="15" required="required" placeholder="">
+                    <input type="tel" id="tel" minlength="8" maxlength="15" required="required" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="">
                     <label for="tel">Telefón *</label>
                 </div>
             </div>
             <div class="form-block">
-                <input type="email" id="email" required="required" placeholder="">
+                <input type="email" id="email" required="required" value="" placeholder="" onkeyup="this.setAttribute('value', this.value);">
                 <label for="email">Emailová adresa *</label>
             </div>
             <div class="form-block">

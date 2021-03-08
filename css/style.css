@@ -232,11 +232,11 @@ h2.pink {
 .reference {
   background: #476667;
   color: white;
-  height: 800px;
 }
 .reference__row {
   display: flex;
   padding-top: 295px;
+  padding-bottom: 40px;
 }
 .reference__head {
   flex: 30%;
@@ -350,6 +350,13 @@ h2.pink {
   outline: none;
 }
 .contact form input:focus + label, .contact form textarea:focus + label, .contact form input:valid + label, .contact form textarea:valid + label {
+  -webkit-transform: translate(-10%, -15px) scale(0.8);
+  -moz-transform: translate(-10%, -15px) scale(0.8);
+  -ms-transform: translate(-10%, -15px) scale(0.8);
+  -o-transform: translate(-10%, -15px) scale(0.8);
+  transform: translate(-10%, -15px) scale(0.8);
+}
+.contact form input:not([value=""]):not(:focus):invalid + label {
   -webkit-transform: translate(-10%, -15px) scale(0.8);
   -moz-transform: translate(-10%, -15px) scale(0.8);
   -ms-transform: translate(-10%, -15px) scale(0.8);
@@ -479,7 +486,7 @@ h2.pink {
     margin: 108px 4% 0 6%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   h2.black, h2.pink {
     font-size: 55px;
   }

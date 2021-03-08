@@ -285,11 +285,11 @@ h2.pink {
 .reference {
   background: $black;
   color: white;
-  height: 800px;
 
   &__row {
     display: flex;
     padding-top: 295px;
+    padding-bottom: 40px;
   }
 
   &__head {
@@ -439,6 +439,15 @@ h2.pink {
       transform: translate(-10%,-15px) scale(0.8);
     }
 
+    input:not([value=""]):not(:focus):invalid + label {
+      -webkit-transform: translate(-10%,-15px) scale(0.8);
+      -moz-transform: translate(-10%,-15px) scale(0.8);
+      -ms-transform: translate(-10%,-15px) scale(0.8);
+      -o-transform: translate(-10%,-15px) scale(0.8);
+      transform: translate(-10%,-15px) scale(0.8);
+    }
+
+
     input[type=email] {
       width: 100%;
     }
@@ -565,7 +574,7 @@ h2.pink {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   h2.black, h2.pink {
     font-size: 55px
   }
