@@ -52,7 +52,7 @@
                 earum nostrum quasi sunt!
             </div>
             <div class="intro__links">
-                <a href="#kontakt" class="intro__link link about-us">
+                <a href="#referencie" class="intro__link link about-us">
                     O nás
                 </a>
                 <a href="#kontakt" class="intro__link link">
@@ -260,24 +260,32 @@
     </div>
 </div>
 
-<div class="contact padding25" id="kontakt">
+<div class="contact padding25">
     <div class="contact__form mgLeft10">
         <div class="contact__category category">
             <h6>KONTAKT</h6>
         </div>
-        <h2 class="pink">Napíšte nám</h2>
+        <h2 class="pink" id="kontakt">Napíšte nám</h2>
 
         <form>
             <div class="name-tel">
-                <div class="name">
-                    <input type="text" placeholder="Meno a priezvisko">
+                <div class="form-block name">
+                    <input type="text" min="3" maxlength="25" id="name-surname" required="required" placeholder="">
+                    <label for="name-surname">Meno a priezvisko</label>
                 </div>
-                <div class="tel">
-                    <input type="tel" placeholder="Telefón *">
+                <div class="form-block tel">
+                    <input type="tel" id="tel" minlength="8" maxlength="15" required="required" placeholder="">
+                    <label for="tel">Telefón *</label>
                 </div>
             </div>
-            <input type="email" placeholder="Emailová adresa *">
-            <textarea placeholder="Sprava *"></textarea>
+            <div class="form-block">
+                <input type="email" id="email" required="required" placeholder="">
+                <label for="email">Emailová adresa *</label>
+            </div>
+            <div class="form-block">
+                <textarea id="message" required="required" placeholder=""></textarea>
+                <label for="message">Sprava *</label>
+            </div>
 
             <div class="send-btn">
                 <button type="submit" class="link">Odoslať</button>

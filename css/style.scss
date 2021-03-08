@@ -32,7 +32,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.link{
+.link {
   padding: 20px 40px;
   font: 400 18px "DMSans";
   display: inline-block;
@@ -114,6 +114,7 @@ h2.pink {
       &__link:hover {
         color: $darkPink;
         transition: all .5s ease;
+        text-shadow: 0px 0px 7px rgba(142, 147, 149, 1);
       }
     }
 
@@ -241,7 +242,8 @@ h2.pink {
       width: 100px;
       cursor: pointer;
       transition: all 0.5s ease-in-out 0s;
-      &:hover{
+
+      &:hover {
         width: 90px;
       }
     }
@@ -260,10 +262,11 @@ h2.pink {
     margin-bottom: -80px;
     transition: all 0.5s ease-in-out 0s;
 
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       width: 0;
     }
-    &:hover{
+
+    &:hover {
       padding-left: 100px;
     }
 
@@ -301,7 +304,8 @@ h2.pink {
     & a {
       background: white;
       color: $black;
-      &:hover{
+
+      &:hover {
         box-shadow: 1px -1px 29px -1px rgb(185 71 71 / 51%) inset;
         -webkit-box-shadow: 1px -1px 29px -1px rgb(185 71 71 / 51%) inset;
         -moz-box-shadow: 1px -1px 29px -1px rgba(185, 71, 71, 0.51) inset;
@@ -363,46 +367,86 @@ h2.pink {
       height: 250px;
     }
   }
-  & .send-btn{
+
+  & .send-btn {
     text-align: center;
     margin-bottom: 40px;
-    button{
+
+    button {
       padding: 12px 40px;
       border: 0;
       color: white;
       background: $black;
       cursor: pointer;
-      &:hover{
-        -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7);
-        box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.7);
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.7);
       }
     }
   }
 
   form {
+    .form-block {
+      position: relative;
+      padding: 15px;
+      padding-left: 0;
+      box-sizing: border-box;
+
+      label {
+        font: 400 16px 'DMSans';
+        color: $black;
+        position: absolute;
+        pointer-events: none;
+        top: 20px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+      }
+    }
+
     input, textarea {
-      border: 0;
-      background: $pink;
-      border-bottom: 1.5px solid #476667;
+      //border: 0;
+      //background: $pink;
+      //border-bottom: 1.5px solid #476667;
       font: 400 16px 'DMSans';
       color: $darkPink;
-      padding: 15px 0;
+      //padding: 15px 0;
+      //width: 100%;
+      -webkit-appearance: none;
+      background: no-repeat bottom, 50% calc(100% - 1px);
+      background-size: 0 100%, 100% 100%;
+      background-image: linear-gradient(0deg, $black 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #47666759 1px, hsla(0, 0%, 82%, 0) 0);
+
+      padding-bottom: 10px;
+      margin: 10px 0 1px 0;
+      display: block;
       width: 100%;
+      border: none;
+      box-sizing: border-box;
+    }
+    input:focus, textarea:focus {
+      background-size: 100% 100%, 100% 100%;
+      transition-duration: .3s;
+      box-shadow: none;
+      outline: none;
+    }
+    input:focus + label, textarea:focus + label, input:valid + label, textarea:valid + label{
+      -webkit-transform: translate(-10%,-15px) scale(0.8);
+      -moz-transform: translate(-10%,-15px) scale(0.8);
+      -ms-transform: translate(-10%,-15px) scale(0.8);
+      -o-transform: translate(-10%,-15px) scale(0.8);
+      transform: translate(-10%,-15px) scale(0.8);
     }
 
     input[type=email] {
       width: 100%;
-      margin: 35px 0;
     }
 
     textarea {
       width: 100%;
       min-height: 120px;
       margin-bottom: 130px;
-    }
-
-    & ::placeholder {
-
     }
 
     & .name-tel {
@@ -478,6 +522,9 @@ h2.pink {
     left: 25vw;
     width: 15vw;
     bottom: 4vw;
+  }
+  .gallery__content:hover {
+    padding-left: 50px;
   }
 
 }
@@ -565,7 +612,7 @@ h2.pink {
     & .header {
       padding-top: 0;
 
-      & .logo img{
+      & .logo img {
         height: 8vw;
       }
 
@@ -720,7 +767,7 @@ h2.pink {
       flex-direction: column;
     }
 
-    &__title h2{
+    &__title h2 {
       margin-bottom: 20px;
     }
 
@@ -743,22 +790,28 @@ h2.pink {
     &__images {
       display: none;
     }
-    &__form{
+
+    &__form {
       margin-bottom: 45px;
-      h2{
+
+      h2 {
         margin-bottom: 40px;
       }
     }
-    & form .name-tel{
+
+    & form .name-tel {
       flex-direction: column;
-      .name, .tel{
+
+      .name, .tel {
         width: 100%;
       }
     }
-    & form textarea{
+
+    & form textarea {
       margin-bottom: 80px;
     }
-    & .send-btn{
+
+    & .send-btn {
       text-align: center;
     }
 
@@ -767,7 +820,7 @@ h2.pink {
 }
 
 @media (max-width: 375px) {
-  h2.black, h2.pink{
+  h2.black, h2.pink {
     font-size: 39px;
   }
   .gallery .gallery__header .black {
